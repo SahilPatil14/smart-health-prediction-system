@@ -1,6 +1,106 @@
 <!doctype html>
 <html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="../static/img/health.ico">
+        <!-- Bootstrap CSS -->
+       
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <title>KIDNEY DISEASE Prediction</title>
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+            
+            <!-- Bootstrap core CSS -->
+            <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Custom styles for this template -->
+            <link href="../static/css/carousel.css" rel="stylesheet">
+            <link href="../static/css/new.css" rel="stylesheet">
+      </head>
+      <body>
+        <header>
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
+                    <a class="logo" href="#">
+                        <img src="../static/img/smarthealth.png" alt="" width="250" height="50">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            
+                            <li class="nav-item active">
+                                <a class="nav-link" href="http://ec2-3-22-248-106.us-east-2.compute.amazonaws.com:8080/">Heart Disease<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="http://ec2-18-191-195-79.us-east-2.compute.amazonaws.com:8080/">Kidney Disease</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="http://ec2-3-137-164-7.us-east-2.compute.amazonaws.com:8080/">Diabetes</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="http://ec2-3-128-189-239.us-east-2.compute.amazonaws.com:8080/">Liver Diease</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="http://ec2-3-128-179-78.us-east-2.compute.amazonaws.com:8080/">Cancer</a>
+                            </li>
+                        </ul>
+              <div class="rightnav">
+                            
+                            <button class="btn btnsmall">KIDNEY DISEASE Predictor Application</button>
+                
+                        </div>
+                        
+    
+                    </div>
+                </nav>
+        </header>
+        <header1>
+            <section class="backgroundresult firstsectionresult" id="home">
+              <div class="mainbox">
+                  <div class="leftside">
+                      <p class="text-big">Mentioned below are your predicted results!</p>
+                      <br>
+                      <br>
+                      <br>
+                      <div class="buttons1result">
+                        <button class="btn1"><a href="register.html">Predict Again</a></button>
+                        
+                    </div>
+                  </div>
+              </div>
+          </section>
+      
+      
    <body>
-       <h1> {{ prediction_text }}</h1>
+       
+      
+       <div class="card text-center ">
+        <div class="card-header">
+          
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Prediction Result</h5>
+          <h2> {{ prediction_text }}</h2>
+          <a href="#" class="btn btn-primary">Back to Home</a>
+        </div>
+        <div class="card-footer text-muted">
+          
+        </div>
+      </div>
+
+      <footer class="background2">
+        <div class="endlogo">
+          <img class=endlogosize src="../static/img/smarthealth.png" alt="logo">
+        </div>
+        <p class="footertext">&copy; 2021-2022 Smart Health. All Rights Reserved</p>
+        <br>
+        <br>
+        <br>
+        <br>
+      </footer>
+      <br>
+       
    </body>
 </html>

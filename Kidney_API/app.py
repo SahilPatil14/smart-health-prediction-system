@@ -14,7 +14,7 @@ def cancer():
 def ValuePredictor(to_predict_list, size):
     to_predict = np.array(to_predict_list).reshape(1,size)
     if(size==7):
-        loaded_model = joblib.load(r'C:\Users\Mahesh Sharma\Desktop\HealthApp\Indivisual_Deployment\Kidney_API\kidney_model.pkl')
+        loaded_model = joblib.load(r'./kidney_model.pkl')
         result = loaded_model.predict(to_predict)
     return result[0]
 
@@ -29,9 +29,9 @@ def predict():
             result = ValuePredictor(to_predict_list,7)
     
     if(int(result)==1):
-        prediction = "Sorry you chances of getting the disease. Please consult the doctor immediately"
+        prediction = "SORRY you have chances of getting the disease...PLEASE CONSULT THE DOCTOR IMMEDIATELY !"
     else:
-        prediction = "No need to fear. You have no dangerous symptoms of the disease"
+        prediction = "No need to fear...you have no dangerous symptoms of the disease. YOU ARE SAFE !"
     return(render_template("result.html", prediction_text=prediction))       
 
 if __name__ == "__main__":

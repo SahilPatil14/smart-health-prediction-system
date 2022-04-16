@@ -8,61 +8,133 @@
     <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-    *{
-    margin:0;
-    padding:0;
-    font-family: 'Josefin Sans', sans-serif;
-    }
-    html,
-    body,
-    header,
-    #intro {
-    height: 100%;
-    }
-    img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    }
-    </style>
-    <title>Heart disease Prediction</title>
+   
+    <title>HEART DISEASE Prediction</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+		
+		<!-- Bootstrap core CSS -->
+		<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="../static/css/carousel.css" rel="stylesheet">
+		<link href="../static/css/new.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Health App</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="heart.html">Heart Disease<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="kidney.html">Kidney Disease</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="diabetes.html">Diabetes</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="liver.html">Liver Diease</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="cancer.html">Cancer</a>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
+				<a class="logo" href="#">
+					<img src="../static/img/smarthealth.png" alt="" width="250" height="50">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto">
+						
+						<li class="nav-item active">
+							<a class="nav-link" href="http://ec2-3-22-248-106.us-east-2.compute.amazonaws.com:8080/">Heart Disease<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="http://ec2-18-191-195-79.us-east-2.compute.amazonaws.com:8080/">Kidney Disease</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="http://ec2-3-137-164-7.us-east-2.compute.amazonaws.com:8080/">Diabetes</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="http://ec2-3-128-189-239.us-east-2.compute.amazonaws.com:8080/">Liver Diease</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="http://ec2-3-128-179-78.us-east-2.compute.amazonaws.com:8080/">Cancer</a>
+						</li>
+					</ul>
+          <div class="rightnav">
+						
+						<button class="btn btnsmall">HEART DISEASE Predictor Application</button>
+			
+					</div>
+					
+
+				</div>
+			</nav>
+    </header>
+    <header1>
+      <section class="background firstsection" id="home">
+        <div class="mainbox">
+            <div class="leftside">
+                <p class="text-big">Know your chances of getting HEART DISEASE in one click!</p>
+                <p class="text-small">Just follow the steps mentioned below and get your health prediction report instantly in minutes !</p>
+                <div class="buttons">
+                    <button class="btn">Know More</button>
+                    <button class="btn">Watch Video</button>
+                </div>
+            </div>
         </div>
-      </nav>
+    </section>
+    <hr class="w-75 mx-auto pt-5">
+
+    <section class="paragraph3" id="about">
+      <div class="heading">
+        <p class="headingtag">How does this smart health predictor work ?</p>
+      </div>
+    </section>
+  
+    <section class="paragraph4">
+  
+      <div class="photo1">
+        <img src="../static/img/5.png" alt="image" class="imgfluid3">
+      </div>
+  
+      <div class="text1">
+        <p class="headingtag1">Select</p>
+        <p class="headingsubtag1">Select the disease whose chances you want to predict to get started.</p>
+      </div>
+  
+      <div class="photo2">
+        <img src="../static/img/6.png" alt="image" class="imgfluid3">
+      </div>
+  
+      <div class="text2">
+        <p class="headingtag1">Fill up</p>
+        <p class="headingsubtag1">Simply fill up the required details asked on the screen.</p>
+      </div>
+  
+      <div class="photo3">
+        <img src="../static/img/7.png" alt="image" class="imgfluid3">
+      </div>
+  
+      <div class="text3">
+        <p class="headingtag1">ML Prediction</p>
+        <p class="headingsubtag1">The system will run the algorithm based on the user inputs.</p>
+      </div>
+  
+      <div class="photo4">
+        <img src="../static/img/8.png" alt="image" class="imgfluid3">
+      </div>
+  
+      <div class="text4">
+        <p class="headingtag1">Notify</p>
+        <p class="headingsubtag1">Get your prediction by clicking the PREDICT button.</p>
+      </div>
+    </section>
+    
+    <br>
+    <br>
+    
+    <hr class="w-75 mx-auto pt-5">
+    <section class="paragraph3" id="about">
+      <div class="heading">
+        <p class="headingtagtool">Fill up the details below to get your report.</p>
+      </div>
+    </section>
+
       <!--Mask-->
       <div id="intro" class="container-fluid view ">
-        <h1 class="text-center text-capitalize pt-5">Know your chances of getting a heart disease in one Click!</h1>
-        <hr class="w-75 mx-auto pt-5">
+        
+        
         <div class="row mb-5">
           <div class="col-lg-6 col-md-6 col-12 my-auto">
-            <img src="../static/img/heart.jpg" class="float-left">
-            
+            <div class="thumbnail">
+              <img src="../static/img/heart.png" alt="image" class="imgfluid2" >
+            </div>
           </div>
           <div class="col-lg-6 col-md-6 col-12">
             <form action="{{ url_for('predict')}}" method="post">
@@ -121,8 +193,25 @@
           </div>
         </div>
       </div>
+
+      <footer class="background2">
+        <div class="endlogo">
+          <img class=endlogosize src="../static/img/smarthealth.png" alt="logo">
+        </div>
+        <p class="footertext">&copy; 2021-2022 Smart Health. All Rights Reserved</p>
+        <br>
+        <br>
+        <br>
+        <br>
+      </footer>
+      <br>
+
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        
+      </footer>
       <!--/.Mask-->
-    </header>
+    </header1>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
